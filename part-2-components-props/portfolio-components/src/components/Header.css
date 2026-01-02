@@ -1,0 +1,65 @@
+/**
+ * Header.css - Styles for the Header component
+ */
+
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: white;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: var(--space-lg);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.header-nav a {
+  color: white;
+  opacity: 0.9;
+  font-weight: 500;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.header-nav a:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .header-name {
+    font-size: 2rem;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  .header-nav {
+    gap: var(--space-md);
+  }
+}

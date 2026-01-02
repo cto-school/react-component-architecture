@@ -1,0 +1,105 @@
+/**
+ * App.css - Styles for the App Component
+ *
+ * In React, we often have a CSS file for each component.
+ * This keeps styles organized and easy to find.
+ */
+
+/* ============================================
+   App Container
+   ============================================ */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+/* ============================================
+   Header Section
+   ============================================ */
+
+.app-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.app-header .subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+/* ============================================
+   Main Content
+   ============================================ */
+
+.app-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.concept-card {
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.concept-card h2 {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.concept-card ul {
+  list-style-position: inside;
+  margin-left: var(--spacing-md);
+}
+
+.concept-card li {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ============================================
+   Code Examples
+   ============================================ */
+
+.code-example {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  margin: var(--spacing-md) 0;
+}
+
+/* ============================================
+   Interactive Demo
+   ============================================ */
+
+.demo-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.demo-section h2 {
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* TODO: Try customizing these styles! Change colors, spacing, etc. */

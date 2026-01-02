@@ -1,0 +1,13 @@
+/**
+ * Experience.css - Styles for the Experience section
+ */
+
+.experience {
+  background: var(--bg-light);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.experience-list {
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,80 @@
+/**
+ * ExperienceItem.css - Styles for individual experience entries
+ */
+
+.experience-item {
+  background: var(--bg-white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+  box-shadow: 0 2px 8px var(--shadow);
+  border-left: 4px solid var(--primary);
+  transition: var(--transition);
+}
+
+.experience-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.experience-role {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.experience-dates {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.experience-company {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.company-name {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.company-location {
+  color: var(--text-light);
+}
+
+.company-location::before {
+  content: '📍 ';
+}
+
+.experience-description {
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.experience-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.tech-tag {
+  background: var(--bg-light);
+  color: var(--primary);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+}

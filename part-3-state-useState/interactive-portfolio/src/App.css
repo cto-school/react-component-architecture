@@ -1,0 +1,58 @@
+/**
+ * App.css - Styles for the main App with theme support
+ */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Demo Sections */
+.demo-section {
+  padding: var(--space-xl) var(--space-md);
+  background: var(--bg-primary);
+}
+
+.demo-section:nth-child(even) {
+  background: var(--bg-secondary);
+}
+
+.section-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto var(--space-lg);
+  color: var(--text-secondary);
+}
+
+.current-theme {
+  text-align: center;
+  margin-top: var(--space-lg);
+  color: var(--text-secondary);
+}
+
+.current-theme strong {
+  color: var(--primary);
+}
+
+/* Footer */
+.app-footer {
+  background: var(--bg-tertiary);
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.app-footer p {
+  margin-bottom: var(--space-sm);
+}
+
+.footer-tip {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}

@@ -1,0 +1,94 @@
+/**
+ * ThemeToggle.css - Styles for the theme toggle switch
+ */
+
+.theme-toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.theme-toggle {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+/* Light mode styles */
+.theme-toggle.light {
+  background: linear-gradient(135deg, #87CEEB 0%, #E0F6FF 100%);
+}
+
+/* Dark mode styles */
+.theme-toggle.dark {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+/* Icons */
+.toggle-icon {
+  font-size: 1.5rem;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.theme-toggle.light .sun {
+  opacity: 0.5;
+}
+
+.theme-toggle.light .moon {
+  opacity: 1;
+}
+
+.theme-toggle.dark .sun {
+  opacity: 1;
+}
+
+.theme-toggle.dark .moon {
+  opacity: 0.5;
+}
+
+/* Toggle switch (the sliding circle) */
+.toggle-switch {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.theme-toggle.light .toggle-switch {
+  left: 5px;
+}
+
+.theme-toggle.dark .toggle-switch {
+  left: 55px;
+}
+
+/* Hover effect */
+.theme-toggle:hover .toggle-switch {
+  transform: scale(1.05);
+}
+
+/* Focus state for accessibility */
+.theme-toggle:focus {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* Label */
+.theme-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}

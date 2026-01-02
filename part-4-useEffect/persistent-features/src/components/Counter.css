@@ -1,0 +1,81 @@
+/**
+ * Counter.css
+ */
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-lg);
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 16px var(--shadow-color);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.counter-display {
+  margin-bottom: var(--space-lg);
+}
+
+.counter-value {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.counter-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.counter-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+.counter-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.counter-btn.decrement {
+  background: #ef4444;
+  color: white;
+}
+
+.counter-btn.increment {
+  background: #22c55e;
+  color: white;
+}
+
+.counter-btn.reset {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  width: 80px;
+}
+
+.counter-message {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.persistence-note {
+  font-size: 0.85rem;
+  color: var(--success);
+  font-weight: 500;
+}

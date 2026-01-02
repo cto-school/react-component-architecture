@@ -1,0 +1,90 @@
+/**
+ * Experience.css
+ */
+
+.experience {
+  background: var(--bg-secondary);
+}
+
+.experience-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background: var(--bg-primary);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--primary);
+  transition: var(--transition-fast);
+}
+
+.experience-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.experience-role {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-1);
+}
+
+.experience-company {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin: 0;
+}
+
+.experience-dates {
+  color: var(--primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.experience-description {
+  margin-bottom: var(--space-4);
+}
+
+.experience-achievements {
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-4);
+}
+
+.experience-achievements li {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+  position: relative;
+}
+
+.experience-achievements li::before {
+  content: '→';
+  position: absolute;
+  left: calc(-1 * var(--space-4));
+  color: var(--primary);
+}
+
+.experience-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tech-tag {
+  background: var(--bg-tertiary);
+  color: var(--primary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}

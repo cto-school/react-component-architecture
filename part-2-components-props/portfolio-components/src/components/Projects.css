@@ -1,0 +1,16 @@
+/**
+ * Projects.css - Styles for the Projects section
+ */
+
+.projects {
+  background: var(--bg-white);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
