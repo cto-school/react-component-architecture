@@ -1,4 +1,4 @@
-# Module 6: The React Shift - Thinking in Components
+# The React Shift - Thinking in Components
 
 > **Skill Level**: Beginner-Friendly | **Total Time**: 5-6 hours | **Parts**: 5
 
